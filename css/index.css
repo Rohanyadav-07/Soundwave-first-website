@@ -1,0 +1,85 @@
+.home-main-section {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.home-main-section .img-wrapper{
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    justify-content: flex-end;
+    flex-grow:1;
+}
+
+.home-main-section .lady-image{
+    background:url('../images/girl.png');
+    flex-grow:1;
+    max-height:70vh;
+    min-width:30vw;
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: bottom left;
+}
+
+.home-main-section .call-to-action{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    margin:1rem;
+    align-self:center;
+}
+
+@media (max-width:900px){
+    .home-main-section .img-wrapper{
+        display:none;
+    }
+    .home-main-section{
+        justify-content: center;
+    }
+}
+
+.home-page-circles-1{
+    position:absolute;
+    width:25vw;
+    height:25vw;
+    background-color:rgba(128, 58, 128,0.1);
+    border-radius: 50%;
+    bottom:5vw;
+    left:5vw;
+    z-index:-1;
+}
+
+.home-page-circles-2{
+    position:absolute;
+    width:25vw;
+    height:25vw;
+    background-color:rgba(23, 98, 167,0.1);
+    border-radius: 50%;
+    top:15vh;
+    left:30vw;
+    z-index:-1;
+}
+
+.home-page-circles-3{
+    position:absolute;
+    width:45vw;
+    height:45vw;
+    bottom:0;
+    right:0;
+    z-index:-1;
+    overflow:hidden;
+}
+
+.home-page-circles-3::before{
+    content:"";
+    position:absolute;
+    height:100%;
+    width:100%;
+    background-color: rgba(23, 98, 167, 0.1);
+    border-radius: 50%;
+    transform: translate(40%,40%);
+    
+
+}
